@@ -1,0 +1,33 @@
+{
+  "name": "open-slot",
+  "version": "1.0.0",
+  "description": "Decentralized appointment-booking platform on BOT Chain",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "compile": "node scripts/compile.js",
+    "deploy:testnet": "node scripts/deploy.js",
+    "seed:testnet": "node scripts/seed.js"
+  },
+  "dependencies": {
+    "@reown/appkit": "^1.8.24",
+    "@reown/appkit-adapter-wagmi": "^1.8.24",
+    "@tailwindcss/vite": "^4.3.4",
+    "@tanstack/react-query": "^5.106.1",
+    "clsx": "^2.1.1",
+    "ethers": "^6.17.0",
+    "lucide-react": "^1.70.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "tailwindcss": "^4.3.4",
+    "viem": "^2.57.16",
+    "wagmi": "^2.19.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.2.1",
+    "solc": "^0.8.38",
+    "vite": "^8.3.6"
+  }
+}
