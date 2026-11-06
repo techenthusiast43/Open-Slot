@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="45%" r="65%">
+      <stop offset="0%" stop-color="#1e1b4b" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#0f172a" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#020617" stop-opacity="1" />
+    </radialGradient>
+    <radialGradient id="centerLight" cx="50%" cy="50%" r="40%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#8b5cf6" />
+    </linearGradient>
+    <linearGradient id="neonCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22d3ee" />
+      <stop offset="0%" stop-color="#0284c7" />
+    </linearGradient>
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.6" />
+      <stop offset="50%" stop-color="#818cf8" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#c084fc" stop-opacity="0.5" />
+    </linearGradient>
+    <linearGradient id="glassFill" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.95" />
+    </linearGradient>
+    <filter id="neonGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="16" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-color="#000000" flood-opacity="0.6" />
+    </filter>
+  </defs>
+
+  <rect width="800" height="800" fill="url(#bgGlow)" />
+  <circle cx="400" cy="400" r="390" fill="none" stroke="#1e293b" stroke-width="1.5" stroke-opacity="0.4" />
+  <circle cx="400" cy="400" r="280" fill="url(#centerLight)" />
+
+  <g filter="url(#softShadow)">
+    <rect x="220" y="200" width="360" height="400" rx="64" fill="url(#glassFill)" stroke="url(#borderGrad)" stroke-width="3" />
+    <path d="M 220 264 C 220 228, 248 200, 284 200 L 516 200 C 552 200, 580 228, 580 264 L 580 280 L 220 280 Z" fill="url(#primaryGrad)" />
+    <rect x="300" y="170" width="24" height="60" rx="12" fill="#e0f2fe" filter="url(#softShadow)" />
+    <rect x="476" y="170" width="24" height="60" rx="12" fill="#e0f2fe" filter="url(#softShadow)" />
+
+    <rect x="268" y="316" width="60" height="48" rx="14" fill="#334155" fill-opacity="0.4" />
+    <rect x="370" y="316" width="60" height="48" rx="14" fill="#334155" fill-opacity="0.4" />
+    <rect x="472" y="316" width="60" height="48" rx="14" fill="#334155" fill-opacity="0.4" />
+
+    <rect x="268" y="394" width="60" height="48" rx="14" fill="#334155" fill-opacity="0.4" />
+    <rect x="370" y="394" width="60" height="48" rx="14" fill="url(#neonCyan)" filter="url(#neonGlow)" />
+    <circle cx="400" cy="418" r="7" fill="#ffffff" />
+    <rect x="472" y="394" width="60" height="48" rx="14" fill="#334155" fill-opacity="0.4" />
+
+    <rect x="268" y="472" width="60" height="48" rx="14" fill="#334155" fill-opacity="0.4" />
+    <rect x="370" y="472" width="60" height="48" rx="14" fill="#334155" fill-opacity="0.4" />
+    <rect x="472" y="472" width="60" height="48" rx="14" fill="#334155" fill-opacity="0.4" />
+
+    <rect x="350" y="556" width="100" height="10" rx="5" fill="#38bdf8" fill-opacity="0.4" />
+  </g>
+
+  <path d="M 180 500 C 140 380, 240 180, 400 150 C 470 137, 560 160, 620 220" 
+        fill="none" 
+        stroke="url(#primaryGrad)" 
+        stroke-width="6" 
+        stroke-linecap="round" 
+        stroke-dasharray="14 12"
+        filter="url(#neonGlow)" />
+
+  <circle cx="620" cy="220" r="10" fill="#38bdf8" filter="url(#neonGlow)" />
+  <circle cx="180" cy="500" r="8" fill="#818cf8" filter="url(#neonGlow)" />
+</svg>
+
